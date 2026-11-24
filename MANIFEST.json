@@ -5,6 +5,11 @@
   "note": "Source and offline sample data only. No real RisuAI user data, API keys, node_modules, upstream source cache, or logs.",
   "files": [
     {
+      "path": ".github/workflows/release.yml",
+      "bytes": 2014,
+      "sha256": "c42aedeaa53096fb1eb9ae8297890ebefb52988222f56252c988e66436b97a82"
+    },
+    {
       "path": ".gitignore",
       "bytes": 53,
       "sha256": "892a9d8098b78570d8715af9d0c3f0337d6bca775e7daf60465ebc0b74294e0c"
@@ -16,13 +21,13 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 12681,
-      "sha256": "d5b775f60710d913cf7c55e3684a44f51215804700c055511b27930ff7df205b"
+      "bytes": 13489,
+      "sha256": "54572801b928ddfebf827871f3d65ba96c60782c8f8a875f185675ee096eb7a4"
     },
     {
       "path": "README.md",
-      "bytes": 15455,
-      "sha256": "e06945542c6715ddf2f8c77efaf18620bf9b89f62e623f787058c8b0b231f56f"
+      "bytes": 16190,
+      "sha256": "335eb1eaf137ca3b01b946a4543653949cb46dfabb361beea7e06954d721e61b"
     },
     {
       "path": "RESUME_PROMPT.txt",
@@ -61,13 +66,13 @@
     },
     {
       "path": "docs/RELEASE_NOTES.md",
-      "bytes": 1756,
-      "sha256": "2c96dc012ff7bc9c38f7f3f0525d769c5262f4d459692cb7814b5c7b58d71f4d"
+      "bytes": 1998,
+      "sha256": "0ba8c2507516f2dcba211e7808557129e718266c9a79846f4647f26b9305bbcf"
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 2042,
-      "sha256": "b00569426ff9dbbae4913f0e8993a0f28bf3ba7acbd816f2be47ea0f0ea8cc9a"
+      "bytes": 2445,
+      "sha256": "3e93b7e64638a628c9a2dfd84074aff244b74f14cc922b25732f7397c6221282"
     },
     {
       "path": "docs/screenshots/description-compact-desktop.png",
@@ -146,8 +151,8 @@
     },
     {
       "path": "scripts/package.cjs",
-      "bytes": 4553,
-      "sha256": "0f5cab8cee29b5674163c155b25de992b0e1e4b24b28614651752cb7684a6f20"
+      "bytes": 4564,
+      "sha256": "b483b2623746ccc809c8fb1755c283be9b4ff18f4a2760a2a8ce8ee6278d9c05"
     },
     {
       "path": "scripts/preview.cjs",

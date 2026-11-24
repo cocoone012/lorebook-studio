@@ -4,11 +4,13 @@ RisuAI에 등록된 캐릭터의 **로어북 항목과 봇 디스크립션**을 
 
 현재 정식 배포 버전은 **1.0.0**입니다. 포함 기능과 설치 안내는 `docs/RELEASE_NOTES.md`에서 확인할 수 있습니다.
 
-[설치용 JS 다운로드](https://raw.githubusercontent.com/cocoone012/lorebook-studio/main/dist/lorebook-studio-v1.0.0.js) · [GitHub 저장소](https://github.com/cocoone012/lorebook-studio)
+[설치용 JS 다운로드](https://github.com/cocoone012/lorebook-studio/releases/download/v1.0.0/lorebook-studio-v1.0.0.js) · [최신 배포 페이지](https://github.com/cocoone012/lorebook-studio/releases/latest) · [GitHub 저장소](https://github.com/cocoone012/lorebook-studio)
 
 ## 설치
 
 전달용 설치 파일은 버전을 붙인 `dist/lorebook-studio-v1.0.0.js`입니다. 개발용 고정 이름 `dist/lorebook-studio.js`와 내용은 같습니다. 빌드할 때 현재 버전의 파일을 함께 생성합니다.
+
+위의 **설치용 JS 다운로드**는 GitHub Release의 첨부파일을 내려받습니다. Release 페이지에서도 Assets의 `lorebook-studio-v1.0.0.js`를 선택하면 됩니다.
 
 함께 생성되는 `dist/lorebook-studio.json`은 동일한 코드와 메타데이터를 담은 보관용 레코드입니다. 실제 앱 테스트 순서는 `docs/REAL_RISU_TEST.md`를 참고하세요.
 
@@ -111,6 +113,8 @@ node scripts/preview.cjs
 브라우저 검증은 `npm install`, `npx playwright install chromium` 후 `npm run test:browser`로 실행합니다. 설치된 Edge를 사용하려면 `PLAYWRIGHT_CHANNEL=msedge` 환경변수를 지정할 수 있습니다. 테스트는 자체 임시 서버를 시작합니다. 메인·보조 라우팅과 모델명, 상태 점, 두 테마와 스크롤 색, 탭별 내용 보존, 기타 번역의 전체·부분 처리, 번역 보기 전용 동작, 원본 반영·복원, 응답 취소·충돌, 모바일 화면과 단일 HTML 미리보기를 검증합니다.
 
 전달용 ZIP을 다시 만들려면 `node scripts/package.cjs`를 실행합니다. `deliverables/`에 개발 ZIP과 SHA-256 파일이 생성됩니다. ZIP 내부의 `MANIFEST.json`은 파일별 무결성 확인용입니다.
+
+GitHub의 `main`에 버전을 올린 `package.json`과 빌드 결과를 업로드하면 `.github/workflows/release.yml`이 빌드·코어 테스트 후 해당 버전의 Release를 만들고 JS와 SHA-256 파일을 첨부합니다. Actions에서 수동 실행할 수도 있습니다. 이미 존재하는 Release는 덮어쓰지 않습니다. 이 절차는 GitHub에 업로드한 이후에 실행되며 로컬 파일을 자동 업로드하지 않습니다.
 
 실제 사용자의 RisuAI 인스턴스 및 모델을 호출하는 설치 후 통합 검증은 이 프로젝트 환경에서 수행하지 않았습니다.
 

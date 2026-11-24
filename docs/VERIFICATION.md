@@ -2,6 +2,9 @@
 
 기준일: 2026-11-24.
 
+- GitHub Actions의 Release 빌드·코어 테스트·생성 파일 일치 검사가 통과했다. v1.0.0 Release의 설치 JS와 SHA-256 첨부를 확인했다.
+- Release 다운로드 주소는 HTTP 200, Content-Type application/octet-stream, Content-Disposition attachment; filename=lorebook-studio-v1.0.0.js로 응답했다. 실제 다운로드한 JS의 SHA-256이 로컬 배포본과 일치했다.
+
 - 반영 버튼 문구 중앙 정렬 검사에 마지막 글자와 화살표 사이 6px 이상 간격 검사를 추가했다.
 
 - 코어 테스트 **17개 통과**: 원본 병합·충돌, 봇 재정렬, 중복/ID 없는 항목, 백업 실패·쓰기 권한 거부, 최초 원본 보존, 디스크립션 반영, 백업 한도, 모델 오류·응답·스트리밍 파싱, 수정 프롬프트 원문 전달, 번역 프롬프트 유지.

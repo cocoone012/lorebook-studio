@@ -19,7 +19,7 @@ function collect(relative) {
     for (const name of fs.readdirSync(full).sort()) collect(relative + '/' + name);
   } else if (stat.isFile()) files.push(relative);
 }
-for (const folder of ['src', 'scripts', 'tests', 'preview', 'docs', 'dist']) collect(folder);
+for (const folder of ['.github', 'src', 'scripts', 'tests', 'preview', 'docs', 'dist']) collect(folder);
 files.sort();
 const manifest = {
   name: '로어북 스튜디오 & 번역기', version,

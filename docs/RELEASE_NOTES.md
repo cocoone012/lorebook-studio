@@ -6,6 +6,8 @@
 
 ## 설치
 
+[설치용 JS 다운로드](https://github.com/cocoone012/lorebook-studio/releases/download/v1.0.0/lorebook-studio-v1.0.0.js)에서 파일을 내려받을 수 있습니다. Release의 Assets에서 같은 JS 파일을 선택해도 됩니다.
+
 RisuAI 설정 → 플러그인 → 아래쪽 `+` 버튼에서 `dist/lorebook-studio-v1.0.0.js`를 가져옵니다. 기존 설치가 있으면 같은 플러그인의 업데이트로 가져옵니다.
 
 플러그인 식별자와 기존 초안·백업·설정의 저장 키를 유지합니다. JSON이나 개발 ZIP은 RisuAI 설치 파일이 아닙니다.

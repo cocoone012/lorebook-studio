@@ -4,6 +4,10 @@
 
 ## 이번 세션 추가 사항
 
+- GitHub Release용 `.github/workflows/release.yml`을 추가했다. main의 package.json 또는 워크플로 변경과 수동 실행으로 동작한다. 빌드·코어 테스트·생성 JS 일치 검사를 통과하면 현재 버전의 Release에 설치 JS와 SHA-256 파일을 첨부하며 기존 Release는 덮어쓰지 않는다. 전달 ZIP에도 .github를 포함한다.
+- README의 설치용 다운로드는 Raw 코드 주소 대신 GitHub Release의 첨부파일 주소를 사용한다. RisuAI 업데이트용 고정 Raw 주소는 그대로 사용한다.
+- v1.0.0 Release와 JS·SHA-256 첨부가 실제로 생성되었다. 다운로드의 attachment 응답과 실제 받은 파일의 해시 일치를 검증했다. 배포 페이지: https://github.com/cocoone012/lorebook-studio/releases/tag/v1.0.0
+
 - 1.0.0: 사용자가 확정한 기능과 화면을 첫 정식 배포 버전으로 묶었다. 설치용 파일은 dist/lorebook-studio-v1.0.0.js이며 플러그인 식별자와 기존 저장 키는 유지한다. 릴리스 안내는 docs/RELEASE_NOTES.md에 있다.
 - GitHub 배포 대상은 https://github.com/cocoone012/lorebook-studio 이다. 소유자 아이디를 변경했으므로 이전 cocoone012-cpu 주소를 새 코드에 넣지 않는다.
 - package.json의 risuUpdateUrl을 빌드에서 //@update-url과 보관용 JSON에 넣는다. 고정 파일 dist/lorebook-studio.js가 업데이트 대상이다. GitHub 업로드는 별도 작업이며 로컬 저장을 감시해 자동으로 업로드하는 기능은 만들지 않았다.
