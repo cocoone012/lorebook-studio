@@ -1,0 +1,10 @@
+{
+  "name": "risu-lorebook-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RisuAI API 3.0 lorebook editor and translator",
+  "repository": { "type": "git", "url": "https://github.com/cocoone012/lorebook-studio.git" },
+  "risuUpdateUrl": "https://raw.githubusercontent.com/cocoone012/lorebook-studio/main/dist/lorebook-studio.js",
+  "scripts": { "build": "node scripts/build.cjs", "test": "node --test tests/*.test.cjs", "test:browser": "node tests/browser.cjs", "preview": "node scripts/preview.cjs", "package": "node scripts/package.cjs" },
+  "devDependencies": { "playwright": "1.62.1" }
+}

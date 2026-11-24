@@ -1,0 +1,188 @@
+{
+  "name": "로어북 스튜디오 & 번역기",
+  "version": "1.0.0",
+  "handoffDate": "2026-11-24",
+  "note": "Source and offline sample data only. No real RisuAI user data, API keys, node_modules, upstream source cache, or logs.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 53,
+      "sha256": "892a9d8098b78570d8715af9d0c3f0337d6bca775e7daf60465ebc0b74294e0c"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3014,
+      "sha256": "1f9faed19b2d5b65590732e58479246372723bae737cf2a43bd9a1fd92104fd5"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 12681,
+      "sha256": "d5b775f60710d913cf7c55e3684a44f51215804700c055511b27930ff7df205b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15455,
+      "sha256": "e06945542c6715ddf2f8c77efaf18620bf9b89f62e623f787058c8b0b231f56f"
+    },
+    {
+      "path": "RESUME_PROMPT.txt",
+      "bytes": 559,
+      "sha256": "cf6d5f4829c5108d39499f6f9f59d19a787ccea5e773d1e9df723399d02e8e94"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 2257,
+      "sha256": "fd41bf9f036a93f99a51c0c8c32683dba6052c48865f1519f87e1fdbce74d9f2"
+    },
+    {
+      "path": "dist/lorebook-studio-v1.0.0.js",
+      "bytes": 114067,
+      "sha256": "3e85b9c981b529ff8f39211cf452ccf0e9504ae0c33041f517c4e54011561029"
+    },
+    {
+      "path": "dist/lorebook-studio.js",
+      "bytes": 114067,
+      "sha256": "3e85b9c981b529ff8f39211cf452ccf0e9504ae0c33041f517c4e54011561029"
+    },
+    {
+      "path": "dist/lorebook-studio.json",
+      "bytes": 117273,
+      "sha256": "3c9943ab808d175ea2140aa082ee9812fe7739e67efdaf52eb9c5b67f194a09e"
+    },
+    {
+      "path": "docs/API_NOTES.md",
+      "bytes": 2761,
+      "sha256": "12913bede3aa4f33bfce364e8d83673647a8b76739f2e93730c3c21412aae6f5"
+    },
+    {
+      "path": "docs/REAL_RISU_TEST.md",
+      "bytes": 3414,
+      "sha256": "0b227a8fe74c33b15ecd933c95421bf6189abbac5132500a389069f0e9e4c07a"
+    },
+    {
+      "path": "docs/RELEASE_NOTES.md",
+      "bytes": 1756,
+      "sha256": "2c96dc012ff7bc9c38f7f3f0525d769c5262f4d459692cb7814b5c7b58d71f4d"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 2042,
+      "sha256": "b00569426ff9dbbae4913f0e8993a0f28bf3ba7acbd816f2be47ea0f0ea8cc9a"
+    },
+    {
+      "path": "docs/screenshots/description-compact-desktop.png",
+      "bytes": 77296,
+      "sha256": "c815557ca9edcd6c677cb8af23a1b833e364c1aa4da40e96fa02642cb8001344"
+    },
+    {
+      "path": "docs/screenshots/description-mobile.png",
+      "bytes": 72295,
+      "sha256": "fcea6d1d7e8d839108417214d747e5d549611af5e0d534bfca87a2f0eafd519a"
+    },
+    {
+      "path": "docs/screenshots/lorebook-desktop.png",
+      "bytes": 83896,
+      "sha256": "69b29edab77cc70ad938dd845018b55dbacac4ff618ccebd20371cae73c60147"
+    },
+    {
+      "path": "docs/screenshots/lorebook-light.png",
+      "bytes": 54508,
+      "sha256": "1e797d93c161b5f28c4843e4aa5449a1e8301a1b36b6f9aece69b57eeb6265e0"
+    },
+    {
+      "path": "docs/screenshots/lorebook-mobile.png",
+      "bytes": 89589,
+      "sha256": "3827b5e1b1ad8fb780010554f40c9d645f7b1d6710dfe0cf774bda99feeef917"
+    },
+    {
+      "path": "docs/screenshots/misc-desktop.png",
+      "bytes": 46201,
+      "sha256": "f2d0cd5b76241d274f1028c88711e0ec12831641048402c79355af16fe799292"
+    },
+    {
+      "path": "docs/screenshots/settings-dark.png",
+      "bytes": 67274,
+      "sha256": "e5676e99c5fd83ab71ca130db13f42500fe7d7e949114c5377b4b73fdadb3a71"
+    },
+    {
+      "path": "docs/screenshots/settings-light.png",
+      "bytes": 68736,
+      "sha256": "96443479a5c2c98bc28a4c9892b16eaae5476bbe3666fa008cf3cae57f739024"
+    },
+    {
+      "path": "docs/screenshots/settings-mobile-dark.png",
+      "bytes": 73822,
+      "sha256": "e2b3b87f63f9ce353a172628c8876985be9df76ddf5f09c610b773edcfa0ab20"
+    },
+    {
+      "path": "docs/screenshots/settings-mobile-light.png",
+      "bytes": 74299,
+      "sha256": "259ad8885d9465249c33909b4926a8e999482c7f371b4984a465beba77ef1a81"
+    },
+    {
+      "path": "package.json",
+      "bytes": 612,
+      "sha256": "f759a391372ecb4e64d67851b2260175c5375b7c02d42ab944b6b0e445a22380"
+    },
+    {
+      "path": "preview/index.html",
+      "bytes": 303,
+      "sha256": "8eaaf89a73f0cf5afa78e9fef78711eca96f380def5de0c47e7803de87d74c60"
+    },
+    {
+      "path": "preview/mock.js",
+      "bytes": 3772,
+      "sha256": "414e548f037ecb3dd2a593207e7d01cb387173aa7f8d5ecbf355b041419f919c"
+    },
+    {
+      "path": "preview/standalone.html",
+      "bytes": 118108,
+      "sha256": "26523bdeb6f2d22b1cd4c22669b6296c1d96a2db5b22b77125f3238ad50e9e28"
+    },
+    {
+      "path": "scripts/build.cjs",
+      "bytes": 2125,
+      "sha256": "6c0d60a0f481b2910fd1354c62cb26872e81f7fdd682935ff17f933944a7ab97"
+    },
+    {
+      "path": "scripts/package.cjs",
+      "bytes": 4553,
+      "sha256": "0f5cab8cee29b5674163c155b25de992b0e1e4b24b28614651752cb7684a6f20"
+    },
+    {
+      "path": "scripts/preview.cjs",
+      "bytes": 935,
+      "sha256": "2836bee0ae1d54ef6026550d5bf586286577ceb9ba5d5126759dd93aea7217b4"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 44918,
+      "sha256": "f08f722d4dafec907aad651acfc3c8e7f28b6dba430894909ccd981b5396db0b"
+    },
+    {
+      "path": "src/core.js",
+      "bytes": 10462,
+      "sha256": "0d5f50a4940da7dbf8ca0b63c9a3502793fc0a9e202f34440a20f06980771732"
+    },
+    {
+      "path": "src/style.css",
+      "bytes": 40004,
+      "sha256": "2b2821773ab2bd80f52750706726eacbe04dc021a2d101c2962766e9ef7e7399"
+    },
+    {
+      "path": "src/view.html",
+      "bytes": 17280,
+      "sha256": "34c49eb26c4d743da6087f8533d5c507f7bdc6b23e665d3536fdae52a737a563"
+    },
+    {
+      "path": "tests/browser.cjs",
+      "bytes": 33342,
+      "sha256": "12f0bcfbc8689f0228a5c2427a3656e347b3be110d9cfc4b1406a71c43ab9185"
+    },
+    {
+      "path": "tests/core.test.cjs",
+      "bytes": 9056,
+      "sha256": "08e168f4fd300712b0311d5b37012f4b76ac21c91c0f0b9c689cd02dc1529461"
+    }
+  ]
+}
