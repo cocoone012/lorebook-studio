@@ -1,0 +1,54 @@
+name: Publish plugin release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - package.json
+      - .github/workflows/release.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: plugin-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Build and test
+        run: |
+          node scripts/build.cjs
+          node --test tests/core.test.cjs
+          node --check dist/lorebook-studio.js
+          git diff --exit-code -- dist/lorebook-studio.js dist/lorebook-studio-v*.js
+      - name: Create checksum
+        run: |
+          node -e 'const fs = require("node:fs"); const crypto = require("node:crypto"); const version = require("./package.json").version; if (!/^\d+\.\d+\.\d+$/.test(version)) throw new Error("Invalid release version"); const name = "lorebook-studio-v" + version + ".js"; const path = "dist/" + name; const hash = crypto.createHash("sha256").update(fs.readFileSync(path)).digest("hex"); fs.writeFileSync(path + ".sha256", hash + "  " + name + "\n");'
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          release_version="$(node -p "require('./package.json').version")"
+          release_tag="v${release_version}"
+          release_asset="dist/lorebook-studio-v${release_version}.js"
+          if gh release view "$release_tag" >/dev/null 2>&1; then
+            echo "Release already exists; keeping its assets unchanged."
+            exit 0
+          fi
+          gh release create "$release_tag" "$release_asset" "$release_asset.sha256" \
+            --target "$GITHUB_SHA" \
+            --title "로어북 스튜디오 & 번역기 v${release_version}" \
+            --notes-file docs/RELEASE_NOTES.md \
+            --latest
